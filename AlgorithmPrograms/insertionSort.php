@@ -1,15 +1,14 @@
 <?php
 /**     
  * Purpose     :   Reads in strings from standard input and prints them in sorted order Uses insertion sort
- *                 read the string from file and print them in a sorted order
- * 
+ *                  read the string from file and print them in a sorted order
  * description :    read the string from file and print them in a sorted order
  * filename    :    insertionSort.php
  * @author     :    surendra
  * @version    :    1.0
  * @since      :    28/01/2019
  ***************************************************************************************************************/
-require 'utility.php';
+include 'utilityForAlgorithm.php';
 /**
  * set path of file 
  */
