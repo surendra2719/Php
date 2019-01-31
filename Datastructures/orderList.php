@@ -7,7 +7,7 @@
  * @filename : orderList.php
  * @author   : surendra
  * @version  : 1.0
- * @since    : 21-01-2019
+ * @since    : 28-01-2019
  ********************************************************************************************************************/
 include '/home/bridgelabz/php programs/utilityForDataStructures/utilityForDataStructers.php';
 include '/home/bridgelabz/php programs/utilityForDataStructures/linkedList.php';
@@ -44,32 +44,31 @@ echo "\n enter the element to search \n";
  * enter element to search
  */
 $key = Utility::readInt();
-/**
- * if it is present in linked list then remove the element else add to linkedlist
- */
+/**if it is present in linked list then remove the element else add to linkedlist */
 if ($linkedList->search($key)) {
     $linkedList->remove($key);
-    $linkedList->display();
     echo $key . " removed\n";
+    $key = array("");
+    asort($key);
+    $linkedList->display();
 } else {
     $linkedList->add($key);
+    $key = array("");
+    asort($key);
     $linkedList->display();
     echo "file updated\n";
 
 }
 $data = $linkedList->getData();
-$n = strlen($data);
 $new = explode(" ", $data);
-
-sort($new);
-$srt = implode($new);
 /**
- *  open file with write operation
+ * open file with write operation
  */
 $file2 = fopen("$path", "w");
 /**
  * there is error in opening file if it is false
  */
+
 if ($file2 == false) {
     echo ("Error in opening new file");
     exit();

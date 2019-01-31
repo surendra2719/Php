@@ -11,11 +11,12 @@ and dequeue the people. Maintain the Cash Balance.
  * @version : 1.0
  * @since   : 04/01/2019
  ***************************************************************************/
-require ("/home/bridgelabz/php programs/utilityForDataStructures/queue.php");
+require "/home/bridgelabz/php programs/utilityForDataStructures/queue.php";
 include '/home/bridgelabz/php programs/utilityForDataStructures/utilityForDataStructers.php';
 function queue() // method for queue
+
 {
-  
+
     $que = new Queue; //  accesing  functions queue class
     $put = []; // declaring array
     $totalmoney = 1000; // intializing the totalmoney
@@ -59,7 +60,7 @@ function queue() // method for queue
         return;
     }
     if ($flag) // checking the flag vraible with if condition
-    {    
+    {
         $sum = 0; // declaring sum vraible
         for ($i = 1; $i <= $inform; $i++) // adding sum variable with amount (deque or enqeue)
         {
