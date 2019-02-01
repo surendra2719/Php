@@ -177,24 +177,30 @@ class Utility
             }
         }
         public static function printPrimeAnagram($prime)
-        {
-            $primeAnagram = array(); // intit array
+        {  
+            /**
+             * INTIALIZING ARRAY
+             */
+            $primeAnagram = array(); 
             $count = 0;
             for ($i = 0; $i < sizeof($prime); $i++) {
                 for ($j = $i + 1; $j < sizeof($prime); $j++) {
-                    if (Utility::isPrimeAnagram("$prime[$i]", "$prime[$j]") == true) { //check two index are anagram
-                        $primeAnagram[$count] = $prime[$i]; // if true then add to array
+                    if (Utility::isPrimeAnagram("$prime[$i]", "$prime[$j]") == true) { 
+                        $primeAnagram[$count] = $prime[$i]; 
                         $count++;
                          $primeAnagram[$count++] = $prime[$j];
                     }
                 }
             }
-            // echo "\n prime anagram number are \n";
-            // for ($k = 0; $k < sizeof($primeAnagram); $k++) { //printing the anagram array
-            //     echo $primeAnagram[$k] . "  ";
-            // }
-           $temp = array_unique($primeAnagram);/**removes duplicate values  */
-           $new_array = array_values($temp); /**moving value to new array */
+         
+           $temp = array_unique($primeAnagram);
+           /**
+            * removes duplicate values  
+           */
+           $new_array = array_values($temp); 
+           /**
+            * moving value to new array  
+           */
            
             return $new_array;
         }

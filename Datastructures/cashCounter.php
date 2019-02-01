@@ -10,7 +10,7 @@ Have an input panel to add people to Queue to either deposit or withdraw money
 and dequeue the people. Maintain the Cash Balance.
  * @version : 1.0
  * @since   : 04/01/2019
- ***************************************************************************/
+ *************************************************************************************/
 require "/home/bridgelabz/php programs/utilityForDataStructures/queue.php";
 include '/home/bridgelabz/php programs/utilityForDataStructures/utilityForDataStructers.php';
 function queue() // method for queue
