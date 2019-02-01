@@ -31,7 +31,7 @@ class StockReport extends Stock{
             $jData = json_encode($obj);
             $jStr = file_put_contents($file,$jData);
             
-            // $stck->writeJson($file);
+          
         }
     }
         function readJson($file){

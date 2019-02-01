@@ -45,7 +45,8 @@ class utility
         }
         return $val;
     }
-    public static function readArrayString(){
+    public static function readArrayString()
+    {
         return trim(fgets(STDIN));
-    } 
+    }
 }
